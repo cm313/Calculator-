@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+       <link rel="stylesheet" href="CSS-style-files/func-calculator.css">
+    </head>
+    <body>
+      <p>
+        <p class = "js-displaytag"></p>
+        <p class = "js-resulttag"></p>
+        <button class="calculator_button grey_button" onclick="updateCalculation('1')">1</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('2')">2</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('3')">3</button>
+        <button class="calculator_button orange_button" onclick="updateCalculation('+')">+</button>
+        </p>
+        <p>
+        <button class="calculator_button grey_button" onclick="updateCalculation('4')">4</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('5')">5</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('6')">6</button>
+        <button class="calculator_button orange_button" onclick="updateCalculation('-')">-</button>
+        </p>
+        <p>
+        <button class="calculator_button grey_button" onclick="updateCalculation('7')">7</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('8')">8</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('9')">9</button>
+        <button class="calculator_button orange_button" onclick="updateCalculation('*')">*</button>
+        </p>
+        <p>
+        <button class="calculator_button grey_button" onclick="updateCalculation('0')">0</button>
+        <button class="calculator_button grey_button" onclick="updateCalculation('.')">.</button>
+        <button class="calculator_button grey_button" onclick="calculation = eval(calculation);
+        document.querySelector('.js-resulttag').innerHTML=`${calculation}`;
+        ">=</button>
+        <button class="calculator_button orange_button" onclick="updateCalculation('/')">/</button>
+        </p>
+        <button class=" clear_button" onclick="calculation='';console.log('cleard..')
+           document.querySelector('.js-displaytag').innerHTML= '';
+          document.querySelector('.js-resulttag').innerHTML='';
+        ">clear</button>
+
+          <script type = "text/javascript" src="JS-script-files/func-calculator.js">
+        </script>
+    </body>
+</html>
